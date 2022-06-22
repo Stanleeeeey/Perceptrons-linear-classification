@@ -9,7 +9,7 @@ Basic linear classification Algorithms
 Perceptron and average Perceptron find theta and theta_0 describing line dividing points into two positived labeled and negative labeled
 
 ### How they work
-(math syntax works only sometimes no idea why)
+
 
 #### describing hyperplanes using vectors
 we can describe the line as 
@@ -35,5 +35,5 @@ then we update percepton
 $$ theta = theta+label*point $$
 $$ theta_0 = theta_0 + label $$
 
-NOTICE: this will not necessarily make $ theta $ and $ theta_0 $ correct but it will always improve 
+NOTICE: this will not necessarily make theta and theta_0 correct but it will always improve it.
 
