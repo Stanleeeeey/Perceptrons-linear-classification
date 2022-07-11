@@ -1,14 +1,15 @@
 import matplotlib.pyplot as plt
-from Perceptron import * #perceptron
-from AveragePerceptron import * # avarage_perceptron
+from LinearPerceptron import * #perceptron
+from AverageLinearPerceptron import * # avarage_perceptron
 import numpy as np
 
-#number of points to generate (for bigger points usually there won't be a line that divides space correctly)
-NUMBEROFPOINTS = 4
+#number of points to generate (for bigger number of points there is bigger probability that there won't be a hyperlane dividing space correctly)
+NUMBEROFPOINTS = 6
+DIMENSION      = 3 # number of dimensions of point 
 
 
 #creating numpy array NUMBEROFPOINTS x [[x-cordinate, y-cordinate], label]
-Points = np.array([np.random.rand(2)  for i in range(NUMBEROFPOINTS)])
+Points = np.array([np.random.rand(DIMENSION)  for i in range(NUMBEROFPOINTS)])
 Labels = np.array([np.random.choice([1,-1], 1)  for i in range(NUMBEROFPOINTS)])
 
 
