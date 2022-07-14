@@ -20,7 +20,7 @@ we can see that ax+by is a [dot product](https://en.wikipedia.org/wiki/Dot_produ
 
 so we can describe line as
 
-$$theta*point + theta_0 = 0$$
+$$\theta*point + \theta_0 = 0$$
 
 this will also work for higher dimension [hyperplanes](https://en.wikipedia.org/wiki/Hyperplane)
 
@@ -28,12 +28,15 @@ this will also work for higher dimension [hyperplanes](https://en.wikipedia.org/
 
 every point in the training data set has also label value ($label = 1$ or $label = -1$)
 
-when points is missclasified by current $ theta $ and $ theta_0 $
-$$ label*(theta*point + theta_0) \leq 0$$
+when points is missclasified by current $\theta$ and $\theta_0$
+
+$$ label*(\theta*point + \theta_0) \leq 0$$
 
 then we update percepton
-$$ theta = theta+label*point $$
-$$ theta_0 = theta_0 + label $$
+
+$$ \theta = \theta+label*point $$
+
+$$ \theta_0 = \theta_0 + label $$
 
 NOTICE: this will not necessarily make theta and theta_0 correct but it will always improve it.
 
